@@ -1,11 +1,15 @@
+# this is the name of workflow
 name: Hello Workflow
 
-on: push
-
+on:
+  push:
+    branches : [main] 
+#this are jobs inside workflows
 jobs:
+  # this is name o workflows
   greet:
     runs-on: ubuntu-latest
-
+    #
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
