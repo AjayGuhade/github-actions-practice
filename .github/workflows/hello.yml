@@ -11,20 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     #
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
+      - name: say hello to users
+        run: echo "hello Dosto"
 
-      - name: Print Greeting
-        run: echo "Hello from GitHub Actions!"
-
-      - name: Show Date and Time
-        run: date
-
-      - name: Show Branch Name
-        run: echo "Branch: ${{ github.ref_name }}"
-
-      - name: List Repository Files
-        run: ls -la
-
-      - name: Show Runner OS
-        run: echo "Runner OS: $RUNNER_OS"
+      - name: say hello to username 
+        run: echo "hello $USER"
