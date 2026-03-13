@@ -2,8 +2,8 @@
 name: Hello Workflow
 
 on:
-  push:
-    branches : [main] 
+  workflow_dispatch: 
+  
 #this are jobs inside workflows
 jobs:
   # this is name o workflows
